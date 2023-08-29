@@ -59,8 +59,9 @@ public class Player : MonoBehaviour
     }
     private void FixedUpdate()
     {
-       // Run(1);
-       rb.AddForce(new Vector3(Input.x,0f,Input.y)*FuerzaMovimiento);
+        Run(1);
+      
+
     }
     public void Jump(InputAction.CallbackContext callbackContext) 
     {
@@ -85,7 +86,7 @@ public class Player : MonoBehaviour
         }
        
     }
-    /* private void Run(float lerpAmount)
+     private void Run(float lerpAmount)
      {
          float targetSpeed = Input.x * Data.runMaxSpeed;
          //We can reduce are control using Lerp() this smooths changes to are direction and speed
@@ -98,10 +99,10 @@ public class Player : MonoBehaviour
              accelRate = (Mathf.Abs(targetSpeed) > 0.01f) ? Data.runAccelAmount * Data.accelInAir : Data.runDeccelAmount * Data.deccelInAir;
          float speedDif = targetSpeed - rb.velocity.x;
          rb.velocity = new Vector2(rb.velocity.x + (Time.fixedDeltaTime  * speedDif * accelRate) / rb.mass, rb.velocity.y);
-          /* Time.fixedDeltaTime is by default in Unity 0.02 seconds equal to 50 FixedUpdate() calls per second
+          //Time.fixedDeltaTime is by default in Unity 0.02 seconds equal to 50 FixedUpdate() calls per second
 
      }
-    */
+    
     public bool TocandoPiso()
     {
         return Physics2D.OverlapCircle(GroundCheck.position, RadioChecker, GroundLayer);

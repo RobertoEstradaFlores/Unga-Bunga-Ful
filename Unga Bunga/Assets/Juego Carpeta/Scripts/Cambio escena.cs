@@ -8,12 +8,14 @@ public class Cambioescena : MonoBehaviour
 {
     public int SceneBuildIndex;
 
-    public string SceneToLoad;
+  
     private void OnTriggerEnter2D(Collider2D Otro)
     {
-        if (Otro.tag =="player")
+        if (Otro.CompareTag("Player"))
         {
             SceneManager.LoadScene(SceneBuildIndex,LoadSceneMode.Single);
+            
+           
         }
     }
 }

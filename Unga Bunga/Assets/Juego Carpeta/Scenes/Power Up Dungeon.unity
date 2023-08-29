@@ -14591,7 +14591,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 55214877}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.0139961, y: -1.75243, z: -650.0017}
+  m_LocalPosition: {x: -1.1662655, y: -1.7542, z: -650.0017}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15587,7 +15587,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneBuildIndex: 0
-  SceneToLoad: 
 --- !u!61 &833568138
 BoxCollider2D:
   m_ObjectHideFlags: 0
